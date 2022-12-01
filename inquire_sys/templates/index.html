@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="{{url_for('static', filename='digital.png')}}" />
+    <link rel="icon" href="{{url_for('static', filename='favicon.ico')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" type="text/css">
+    <title>Digital Twin Inquire System</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-bar">
+            <input class="search-txt" id="search-txt" type="text" name="" onkeydown="enterSearch()"
+                placeholder="Discover the infomation...">
+            <span onclick="search()" class="search-btn" href="#">
+                <svg class="icon" viewBox="0 0 1024 1024" width="30px">
+                    <path
+                        d="M424.024 766.098c-91.619 0-177.754-35.679-242.538-100.464-133.735-133.737-133.735-351.344 0-485.078 64.784-64.784 150.919-100.462 242.538-100.462s177.754 35.677 242.539 100.462c133.733 133.735 133.735 351.34 0 485.078-64.785 64.783-150.922 100.464-242.539 100.464zM424.024 196.085c-60.637 0-117.643 23.613-160.523 66.489-88.512 88.51-88.51 232.53 0 321.040 42.876 42.876 99.885 66.491 160.523 66.491s117.643-23.614 160.523-66.491c88.51-88.51 88.51-232.53 0-321.040-42.876-42.876-99.885-66.489-160.523-66.489z"
+                        fill="#70e1f5" p-id="1176"></path>
+                    <path
+                        d="M886.838 943.904c-14.842 0-29.684-5.663-41.010-16.986l-261.286-261.285c-22.647-22.649-22.647-59.369 0-82.018 22.647-22.647 59.37-22.647 82.018 0l261.286 261.286c22.647 22.649 22.647 59.369 0 82.018-11.325 11.322-26.167 16.985-41.010 16.985z"
+                        fill="#70e1f5" p-id="1177"></path>
+                </svg>
+            </span>
+        </div>
+    </div>
+</body>
+
+<script>
+    function httpPost(URL, PARAMS) {
+        var formEltTemp = document.createElement('form');
+        formEltTemp.action = URL;
+        formEltTemp.method = "post";
+        formEltTemp.style.display = 'none';
+        for (var key in PARAMS) {
+            var input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = key;
+            input.value = PARAMS[key];
+            formEltTemp.appendChild(input);
+        }
+        document.body.appendChild(formEltTemp);
+        formEltTemp.submit();
+        document.body.removeChild(formEltTemp);
+    }
+
+    function search() {
+        var text = document.getElementById("search-txt");
+        if (text.value != "") {
+            var params = {
+                "inquire": text.value
+            };
+            httpPost("/inquire", params);
+            text.value = "";
+        }
+    }
+
+    function enterSearch() {
+        var event = window.event || arguments.callee.caller.arguments[0];
+        if (event.keyCode == 13) {
+            search();
+        }
+    }
+</script>
+
+
+</html>
