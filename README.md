@@ -1,12 +1,16 @@
 # 说明
 
+本项目使用了较多新版本python的特性，如海象等式、类型标注等等，故需要较高python版本
+
+推荐`3.10.8`
+
 ## NLP Flask
 
 用于快速调用LTP等工具，进行分词、语义、三元组抽取等操作。
 
 运行`set_up.py`配置环境
 
-为了节省空间，就不打包在本文件中了
+模型请到[哈工大](https://ltp.ai)的网站或[hugging-face](https://huggingface.co)自行下载。
 
 ## spider
 
@@ -56,7 +60,7 @@
 
 修改`neo4j_builder.py`中的登陆密码
 
-输入info_extension得到的所有json以及cnki.json
+将info_extension得到的所有json以及cnki.json放入`input`
 
 运行
 
