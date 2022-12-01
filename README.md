@@ -28,11 +28,11 @@
 
 输入：
 
-![image-20221201081540436](https://notesoflouis.oss-cn-chengdu.aliyuncs.com/imgs/image-20221201081540436.png)
+![image](https://user-images.githubusercontent.com/38573173/205143287-5029fe18-5b2a-452f-ba26-0007627c2b04.png)
 
 输出json文件：
 
-![image-20221201081727452](https://notesoflouis.oss-cn-chengdu.aliyuncs.com/imgs/image-20221201081727452.png)
+![image](https://user-images.githubusercontent.com/38573173/205143436-880a3fc2-9eac-4cee-8853-bfb51be2fcd2.png)
 
 ## cooperation_analyse
 
