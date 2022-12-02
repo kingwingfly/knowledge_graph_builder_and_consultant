@@ -12,6 +12,8 @@
 
 模型请到[哈工大](https://ltp.ai)的网站或[hugging-face](https://huggingface.co)自行下载。
 
+![image](https://user-images.githubusercontent.com/38573173/202845959-c0f4048f-767d-4aab-b5e8-3e7571bd5493.png)
+
 ## spider
 
 `pip install httpx`安装依赖。
@@ -25,6 +27,8 @@
 - `halt` 两个批次间的暂停时间；
 
 推荐``depth`设置为3 `batch_size`为16 halt为2
+
+![image](https://user-images.githubusercontent.com/38573173/205223715-281e3688-0d5d-4d18-b5a5-87c95a2d6cbb.png)
 
 ## cnki_parser
 
@@ -43,6 +47,8 @@
 输入上一部分输出的json文件。
 
 输出包含作者合作关系的json文件：  {Author: [Authors]···}
+
+![image](https://user-images.githubusercontent.com/38573173/205224085-b78052b6-25d4-4694-a43c-115ca1b710c7.png)
 
 ## info_extension
 
@@ -64,6 +70,8 @@
 
 运行
 
+![image](https://user-images.githubusercontent.com/38573173/205223052-6d22b0d2-c014-4630-bcec-ad3e1418496c.png)
+
 ## inquire_sys
 
 问答系统
@@ -73,3 +81,11 @@
 运行`app.py`
 
 打开`localhost:8848`即可
+
+![image](https://user-images.githubusercontent.com/38573173/205223380-c25d6e89-fcb1-4a42-b23c-2df5f4df2b43.png)
+
+询问`数字孪生的全部信息`，结果如下（部分）：
+
+![image](https://user-images.githubusercontent.com/38573173/205224432-6e827684-66f1-42f9-97ce-66b848e2e910.png)
+
+
