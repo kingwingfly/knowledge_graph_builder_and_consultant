@@ -58,6 +58,10 @@
 
 第二步，从百度百科爬取所有信息，并保存
 
+![image](https://user-images.githubusercontent.com/38573173/205224640-4334e8cc-b352-4652-8874-ad5d7f217e0b.png)
+
+![image](https://user-images.githubusercontent.com/38573173/205224722-b2c09c5c-42d1-44b6-8082-70d8eb419ae8.png)
+
 ## neo4j_builder
 
 `pip install py2neo`安装依赖
