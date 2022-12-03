@@ -26,7 +26,7 @@
 - `batch_size` 每批次爬取的词条数目；
 - `halt` 两个批次间的暂停时间；
 
-推荐``depth`设置为3 `batch_size`为16 halt为2
+推荐`depth`设置为3 `batch_size`为16 halt为2
 
 ![image](https://user-images.githubusercontent.com/38573173/205223715-281e3688-0d5d-4d18-b5a5-87c95a2d6cbb.png)
 
@@ -46,7 +46,7 @@
 
 输入上一部分输出的json文件。
 
-输出包含作者合作关系的json文件：  {Author: [Authors]···}
+输出包含作者合作关系的json文件：   {Author: [Article, [Authors]]···}
 
 ![image](https://user-images.githubusercontent.com/38573173/205224085-b78052b6-25d4-4694-a43c-115ca1b710c7.png)
 
@@ -91,5 +91,4 @@
 询问`数字孪生的全部信息`，结果如下（部分）：
 
 ![image](https://user-images.githubusercontent.com/38573173/205224432-6e827684-66f1-42f9-97ce-66b848e2e910.png)
-
 
