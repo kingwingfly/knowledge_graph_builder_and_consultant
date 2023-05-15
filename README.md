@@ -16,6 +16,8 @@
 
 ## spider
 
+应该叫crawler，但是懒得改了
+
 `pip install httpx`安装依赖。
 
 一个实现协程的百度百科爬虫。
