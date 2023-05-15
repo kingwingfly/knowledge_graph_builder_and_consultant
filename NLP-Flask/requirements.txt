@@ -1,0 +1,8 @@
+ddparser==1.0.6
+Flask==2.2.2
+jieba==0.42.1
+ltp==4.2.11.post2
+pyltp==0.4.0
+opencv-python==4.6.0.66
+LAC==2.1.2
+httpx[http2]

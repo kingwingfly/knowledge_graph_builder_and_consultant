@@ -1,0 +1,101 @@
+<!doctype html>
+<html style='font-size:17px !important'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1'>
+
+    <link href='https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Source+Sans+Pro&display=swap'
+        rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" type="text/css">
+    <title>index</title>
+</head>
+
+<body class='typora-export os-windows'>
+    <div class='typora-export-content'>
+        <div id='write' class=' first-line-indent'>
+            <h1 id='ltp'><span>NLP</span></h1>
+            <blockquote>
+                <p><span>你好，此程序由Louis翔基于Python、flask、LTP等编写</span></p>
+                <p><span>2022.11.19 邮箱：836250617@qq.com</span></p>
+                <p><span>深度神经网络：基于哈工大发布于HuggingFace上的Base2模型</span></p>
+                <p><span>支持向量机：基于哈工大发布于HuggingFace上的Legacy模型</span></p>
+                <p><span>三元组提取采用HuangFJ/pyltp方案</span></p>
+            </blockquote>
+            <h2>开始使用</h2>
+            <h3>LTP</h3>
+            <p><a href="/DNN"><span>深度神经网络</span></a><span> </span></p>
+            <p><a href="/SVM"><span>支持向量机</span></a></p>
+            <h3>三元组提取</h3>
+            <p><a href="/Triples"><span>三元组提取</span></a></p>
+            <h3>关键词提取</h3>
+            <p><a href="/keyWords"><span>关键词提取</span></a></p>
+            <h2 id='模型性能及下载地址'>模型性能及地址</h2>
+            <figure>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style='text-align:center;'>模型</th>
+                            <th style='text-align:center;'>分词</th>
+                            <th>词性</th>
+                            <th style='text-align:center;'>命名实体</th>
+                            <th style='text-align:center;'>语义角色</th>
+                            <th style='text-align:center;'>语义角色</th>
+                            <th style='text-align:center;'>语义依存</th>
+                            <th style='text-align:center;'>速度(句/秒)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style='text-align:center;'><a href='https://huggingface.co/LTP/base2'>Base2</a></td>
+                            <td style='text-align:center;'>99.18</td>
+                            <td>98.69</td>
+                            <td style='text-align:center;'>95.97</td>
+                            <td style='text-align:center;'>79.49</td>
+                            <td style='text-align:center;'>90.19</td>
+                            <td style='text-align:center;'>76.62</td>
+                            <td style='text-align:center;'>--.--</td>
+                        </tr>
+                        <tr>
+                            <td style='text-align:center;'><a href='https://huggingface.co/LTP/legacy'>Legacy</a></td>
+                            <td style='text-align:center;'>97.93</td>
+                            <td>98.41</td>
+                            <td style='text-align:center;'>94.28</td>
+                            <td style='text-align:center;'>不支持</td>
+                            <td style='text-align:center;'>不支持</td>
+                            <td style='text-align:center;'>不支持</td>
+                            <td style='text-align:center;'>21581.48</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </figure>
+            <p><span>若您的设备有GPU，并已正确配置CUDA，建议使用深度神经网络模型，速度快很多</span></p>
+            <p><span>在没有GPU的设备上，理论上，支持向量机更快</span></p>
+            <p><span><a href="https://developer.nvidia.com/cuda-toolkit">CUDA官方网站</a>请确保您有符合要求的GPU设备</span></p>
+            <h2 id='相关论文'>相关论文</h2>
+            <blockquote>
+                <p>@article{che2020n,
+                    title={N-LTP: A Open-source Neural Chinese Language Technology Platform with Pretrained Models},
+                    author={Che, Wanxiang and Feng, Yunlong and Qin, Libo and Liu, Ting},
+                    journal={arXiv preprint arXiv:2009.11616},
+                    year={2020}
+                    }</p>
+            </blockquote>
+            <blockquote>
+                <p>@misc{zhang2020practical,
+                    title={A Practical Chinese Dependency Parser Based on A Large-scale Dataset},
+                    author={Shuai Zhang and Lijie Wang and Ke Sun and Xinyan Xiao},
+                    year={2020},
+                    eprint={2009.00901},
+                    archivePrefix={arXiv},
+                    primaryClass={cs.CL}
+                    }</p>
+            </blockquote>
+        </div>
+    </div>
+
+
+    <script>(function () { var e = document.body.parentElement, t = [], n = null, i = document.body.classList.contains("typora-export-collapse-outline"), r = function (e, t, n) { document.addEventListener(e, function (e) { if (!e.defaultPrevented) for (var i = e.target; i && i != this; i = i.parentNode)if (i.matches(t)) { !1 === n.call(i, e) && (e.preventDefault(), e.stopPropagation()); break } }, !1) }; function o() { return e.scrollTop } r("click", ".outline-expander", function (e) { var t = this.closest(".outline-item-wrapper").classList; return t.contains("outline-item-open") ? t.remove("outline-item-open") : t.add("outline-item-open"), d(), !1 }), r("click", ".outline-item", function (e) { var t = this.querySelector(".outline-label"); if (location.hash = "#" + t.getAttribute("href"), i) { var n = this.closest(".outline-item-wrapper").classList; n.contains("outline-item-open") || n.add("outline-item-open"), c(), n.add("outline-item-active") } }); var a, s, l = function () { var e = o(); n = null; for (var i = 0; i < t.length && t[i][1] - e < 60; i++)n = t[i] }, c = function () { document.querySelectorAll(".outline-item-active").forEach(e => e.classList.remove("outline-item-active")), document.querySelectorAll(".outline-item-single.outline-item-open").forEach(e => e.classList.remove("outline-item-open")) }, d = function () { if (n) { c(); var e = document.querySelector('.outline-label[href="#' + (CSS.escape ? CSS.escape(n[0]) : n[0]) + '"]'); if (e) if (i) { var t = e.closest(".outline-item-open>ul>.outline-item-wrapper"); if (t) t.classList.add("outline-item-active"); else { for (var r = (e = e.closest(".outline-item-wrapper")).parentElement.closest(".outline-item-wrapper"); r;)r = (e = r).parentElement.closest(".outline-item-wrapper"); e.classList.add("outline-item-active") } } else e.closest(".outline-item-wrapper").classList.add("outline-item-active") } }; window.addEventListener("scroll", function (e) { a && clearTimeout(a), a = setTimeout(function () { l(), d() }, 300) }); var u = function () { s = setTimeout(function () { !function () { t = []; var e = o(); document.querySelector("#write").querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(n => { var i = n.getAttribute("id"); t.push([i, e + n.getBoundingClientRect().y]) }) }(), l(), d() }, 300) }; window.addEventListener("resize", function (e) { s && clearTimeout(s), u() }), u() })();</script>
+</body>
+
+</html>

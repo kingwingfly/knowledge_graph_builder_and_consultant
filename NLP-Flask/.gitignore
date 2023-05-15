@@ -1,0 +1,179 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# My
+data/base2/.gitattributes
+data/base2/added_tokens.json
+data/base2/config.json
+data/base2/pytorch_model.bin
+data/base2/README.md
+data/base2/special_tokens_map.json
+data/base2/tokenizer_config.json
+data/base2/vocab.txt
+data/legacy/.gitattributes
+data/legacy/config.json
+data/legacy/cws_model.bin
+data/legacy/ner_model.bin
+data/legacy/pos_model.bin
+data/legacy/README.md
+EventTriplesExtraction/ltp_models/cws.model
+EventTriplesExtraction/ltp_models/md5.txt
+EventTriplesExtraction/ltp_models/ner.model
+EventTriplesExtraction/ltp_models/parser.model
+EventTriplesExtraction/ltp_models/pisrl_win.model
+EventTriplesExtraction/ltp_models/pisrl.model
+EventTriplesExtraction/ltp_models/pos.model
+EventTriplesExtraction/ltp_models/version
+data/base2/tokenizer.json
+output/*/*.txt
+data/small/.gitattributes
+data/small/added_tokens.json
+data/small/config.json
+data/small/README.md
+data/small/special_tokens_map.json
+data/small/tokenizer_config.json
+data/small/tokenizer.json
+data/small/vocab.txt
+data/tiny/.gitattributes
+data/tiny/added_tokens.json
+data/tiny/config.json
+data/tiny/README.md
+data/tiny/special_tokens_map.json
+data/tiny/tokenizer_config.json
+data/tiny/tokenizer.json
+data/tiny/vocab.txt
+data/tiny/pytorch_model.bin
+data/small/pytorch_model.bin
+results/triples
+input
+trash
+spider/*.json
+spider_results/*.json
+.DS_Store
